@@ -1,0 +1,24 @@
+.body{
+    margin:0;
+}
+.profile-image{
+    max-width: 40%;
+    display: inline-block;
+}
+.block{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.white{
+    background: wheat;
+}
+.column{
+    display: inline-block;
+    max-width: 45%;
+    height: 100%;
+}
+
