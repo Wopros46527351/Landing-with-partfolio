@@ -1,11 +1,10 @@
-.first-block{
+.first-block {
     background-image: url("./back.jpg");
-    background-size:auto;
-
+    background-size: auto;
     height: 100vh;
 }
 
-.up{
+.up {
     width: 100%;
     height: 50px;
     padding-left: 50px;
@@ -14,44 +13,185 @@
     left: 0;
 }
 
-.up p{
+.up p {
     display: inline-block;
-    
+    margin-left: 50px;
+    font-size: large;
+    user-select: none;
+    padding-bottom: 20px;
+    transition: padding-bottom 250ms;
 }
 
-.up p:hover{
+.up p:hover {
     color: blue;
     border: blue solid;
     border-width: 0px 0px 2px 0px;
+    padding-bottom: 0px;
 }
 
-.middle{
-    width: 800px;
-    height: 400px;
+.middle {
+    width: 70%;
+    height: 60%;
     position: relative;
-    top: 20%;
-    left:  10%;
-    background:red;
+    top: 10%;
+    left: 5%;
 }
-.scroll{
+
+.middle * {
+    animation: appear 2s;
+}
+
+.middle p {
+    color: blue;
+    font-size: 24px;
+}
+
+.middle h1 {
+    font-size: 80px;
+}
+
+.col {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 50%;
+}
+
+.col p {
+    color: black;
+    font-size: 30px;
+    width: 200px;
+}
+
+.scroll {
     width: 200px;
     height: 200px;
     position: relative;
-    top: 10px;
+    top: -10%;
     left: 80%;
-    background:blue;
+    background: blue;
+    animation: rotateme 5s infinite linear;
 }
 
-.navbar{
-    background: whitesmoke;
+@keyframes rotateme {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes appear {
+    from {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0px);
+        opacity: 100;
+    }
+}
+
+.navbar {
+    background: black;
     width: 50px;
     height: 100vh;
     position: fixed;
-    left:0px;
-    top:0px;
+    left: 0px;
+    top: 0px;
     z-index: 10;
 }
 
-body{
+.second-block {
+    height: 100vh;
+    width: 100%;
+    background: black;
+    color: whitesmoke;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+}
+
+.image {
+    margin-left: 50px;
+    display: inline-block;
+    width: 40%;
+}
+
+.image img {
+    width: 100%;
+    display: inline-block;
+}
+
+.column {
+    width: 40%;
+    display: inline-block;
+}
+.column .punchline{
+    color: blue;
+    font-size: 20px;
+}
+
+.column h1{
+    font-size: 60px;
+}
+
+.column h4{
+    width: 80%;
+    font-size: 30px;
+    margin-top: 100px;
+    border: solid whitesmoke ;
+    border-width: 2px 0px 0px 0px;
+
+}
+
+.team-block{
+    min-height: 100vh;
+    padding-left: 100px;
+    padding-top: 20px;
+    background: whitesmoke;
+}
+
+.team-block .top{
+    color: blue;
+    font-size: 20px;
+    display: block;
+    margin: 20px;
+}
+
+.team-block h2{
+    display: inline-block;
+    width: 40%;
+    font-size: 80px;
+    margin: 20px;
+}
+
+.team-block p{
+    display: inline-block;
+    font-size: 20px;
+    width: 50%;
+}
+
+.card{
+    width: min-content;
+    text-align: center;
+    display: inline-block;
+    margin:0px 20px;
+}
+.card .name{
+    font-size: 20px;
+    color: black;
+    margin: 10px;
+}
+.card .pro{
+    font-size: 20px;
+    color: blue;
+    margin: 10px;
+}
+
+
+body {
     margin: 0;
 }
