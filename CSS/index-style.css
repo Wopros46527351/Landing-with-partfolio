@@ -368,23 +368,80 @@ body {
 /*--------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
 .achiv-block {
-    min-height: 100vh;
+    height: 100vh;
     padding-left: 100px;
     padding-top: 20px;
     background: whitesmoke;
+    display: flex;
+    align-items: center;
+}
+.flex-col{
+    display: inline-block;
+}
+.big_achiv{
+    height: 90vh;
+    width: 90vh;
+    max-width: 33vw;
+    max-height: 33vw;
+    background: red;
+    margin: 20px;
+    display: inline-block;
+    color:rgba(0, 0, 0, 0);
+    box-sizing: border-box;
 }
 
+.small_achiv{
+    height: 45vh;
+    width: 45vh;
+    max-width: 16vw;
+    max-height: 16vw;
+    background: red;
+    margin: 20px;
+    color:rgba(0, 0, 0, 0);
+    box-sizing: border-box;
+}
+
+.big_achiv:hover{
+color: black;
+}
+
+.small_achiv:hover{
+    color: black;
+    }
 /*--------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
 /*--------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
 .partener-block {
-    min-height: 100vh;
     padding-left: 100px;
     padding-top: 20px;
     background: black;
+    color: whitesmoke;
 }
 
+.partener-block h1{
+    width: 30%;
+    display: inline-block;
+}
+
+.partener-block p{
+    width: 50%;
+    display: inline-block;
+}
+.partener-block .partner{
+    display: inline-block;
+    margin: 20px;
+}
+
+.partner img{
+    height: 10vw;
+    width: 10vw;
+}
+.partner-continer{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+}
 /*--------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
 /*--------------------------------------------------------------------------------------------------------------------------------------------------------------*/
@@ -395,6 +452,88 @@ body {
     padding-top: 20px;
     background: whitesmoke;
 }
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+    position: relative;
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+  
+  /* Add a pointer when hovering over the thumbnail images */
+  .cursor {
+    cursor: pointer;
+  }
+  
+  /* Next & previous buttons */
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* Container for image text */
+  .caption-container {
+    text-align: center;
+    background-color: #222;
+    padding: 2px 16px;
+    color: white;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Six columns side by side */
+  .column {
+    float: left;
+    width: 16.66%;
+  }
+  
+  /* Add a transparency effect for thumnbail images */
+  .demo {
+    opacity: 0.6;
+  }
+  
+  .active,
+  .demo:hover {
+    opacity: 1;
+  }
 
 /*--------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
@@ -404,7 +543,7 @@ body {
     min-height: 20vh;
     padding-left: 100px;
     padding-top: 20px;
-    background: black;
+    background: whitesmoke;
 }
 
 /*--------------------------------------------------------------------------------------------------------------------------------------------------------------*/
