@@ -11,9 +11,12 @@
 body {
     margin: 0;
     font-family: "Inter";
+    width: 100%;
 }
 
+
 /*--------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
 
 /*--------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
@@ -21,6 +24,7 @@ body {
     background-image: url("./back.jpg");
     background-size: auto;
     height: 100vh;
+    width: 100%;
 }
 
 .up {
@@ -113,7 +117,9 @@ body {
     }
 }
 
+
 /*--------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
 
 /*--------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
@@ -133,7 +139,9 @@ body {
     bottom: 0px;
 }
 
+
 /*--------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
 
 /*--------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
@@ -184,13 +192,18 @@ body {
     border: solid whitesmoke;
     border-width: 2px 0px 0px 0px;
 }
-.menu-item{
+
+.menu-item {
     user-select: none;
 }
-.menu-item:hover{
+
+.menu-item:hover {
     background: gray;
 }
+
+
 /*--------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
 
 /*--------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
@@ -263,7 +276,9 @@ body {
     font-size: 40px;
 }
 
+
 /*--------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
 
 /*--------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
@@ -363,7 +378,9 @@ body {
     left: 450px;
 }
 
+
 /*--------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
 
 /*--------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
@@ -375,10 +392,12 @@ body {
     display: flex;
     align-items: center;
 }
-.flex-col{
+
+.flex-col {
     display: inline-block;
 }
-.big_achiv{
+
+.big_achiv {
     height: 90vh;
     width: 90vh;
     max-width: 33vw;
@@ -386,29 +405,32 @@ body {
     background: red;
     margin: 20px;
     display: inline-block;
-    color:rgba(0, 0, 0, 0);
+    color: rgba(0, 0, 0, 0);
     box-sizing: border-box;
 }
 
-.small_achiv{
+.small_achiv {
     height: 45vh;
     width: 45vh;
     max-width: 16vw;
     max-height: 16vw;
     background: red;
     margin: 20px;
-    color:rgba(0, 0, 0, 0);
+    color: rgba(0, 0, 0, 0);
     box-sizing: border-box;
 }
 
-.big_achiv:hover{
-color: black;
+.big_achiv:hover {
+    color: black;
 }
 
-.small_achiv:hover{
+.small_achiv:hover {
     color: black;
-    }
+}
+
+
 /*--------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
 
 /*--------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
@@ -419,30 +441,35 @@ color: black;
     color: whitesmoke;
 }
 
-.partener-block h1{
+.partener-block h1 {
     width: 30%;
     display: inline-block;
 }
 
-.partener-block p{
+.partener-block p {
     width: 50%;
     display: inline-block;
 }
-.partener-block .partner{
+
+.partener-block .partner {
     display: inline-block;
     margin: 20px;
 }
 
-.partner img{
+.partner img {
     height: 10vw;
     width: 10vw;
 }
-.partner-continer{
+
+.partner-continer {
     margin-top: 20px;
     display: flex;
     justify-content: space-evenly;
 }
+
+
 /*--------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
 
 /*--------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
@@ -452,24 +479,33 @@ color: black;
     padding-top: 20px;
     background: whitesmoke;
 }
+
+
 /* Position the image container (needed to position the left and right arrows) */
+
 .container {
     position: relative;
-  }
-  
-  /* Hide the images by default */
-  .mySlides {
+}
+
+
+/* Hide the images by default */
+
+.mySlides {
     display: none;
-  }
-  
-  /* Add a pointer when hovering over the thumbnail images */
-  .cursor {
+}
+
+
+/* Add a pointer when hovering over the thumbnail images */
+
+.cursor {
     cursor: pointer;
-  }
-  
-  /* Next & previous buttons */
-  .prev,
-  .next {
+}
+
+
+/* Next & previous buttons */
+
+.prev,
+.next {
     cursor: pointer;
     position: absolute;
     top: 40%;
@@ -482,60 +518,74 @@ color: black;
     border-radius: 0 3px 3px 0;
     user-select: none;
     -webkit-user-select: none;
-  }
-  
-  /* Position the "next button" to the right */
-  .next {
+}
+
+
+/* Position the "next button" to the right */
+
+.next {
     right: 0;
     border-radius: 3px 0 0 3px;
-  }
-  
-  /* On hover, add a black background color with a little bit see-through */
-  .prev:hover,
-  .next:hover {
+}
+
+
+/* On hover, add a black background color with a little bit see-through */
+
+.prev:hover,
+.next:hover {
     background-color: rgba(0, 0, 0, 0.8);
-  }
-  
-  /* Number text (1/3 etc) */
-  .numbertext {
+}
+
+
+/* Number text (1/3 etc) */
+
+.numbertext {
     color: #f2f2f2;
     font-size: 12px;
     padding: 8px 12px;
     position: absolute;
     top: 0;
-  }
-  
-  /* Container for image text */
-  .caption-container {
+}
+
+
+/* Container for image text */
+
+.caption-container {
     text-align: center;
     background-color: #222;
     padding: 2px 16px;
     color: white;
-  }
-  
-  .row:after {
+}
+
+.row:after {
     content: "";
     display: table;
     clear: both;
-  }
-  
-  /* Six columns side by side */
-  .column {
+}
+
+
+/* Six columns side by side */
+
+.column {
     float: left;
     width: 16.66%;
-  }
-  
-  /* Add a transparency effect for thumnbail images */
-  .demo {
+}
+
+
+/* Add a transparency effect for thumnbail images */
+
+.demo {
     opacity: 0.6;
-  }
-  
-  .active,
-  .demo:hover {
+}
+
+.active,
+.demo:hover {
     opacity: 1;
-  }
+}
+
 
 /*--------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
 
 /*--------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
@@ -546,74 +596,274 @@ color: black;
     background: whitesmoke;
 }
 
-/*--------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
 /*--------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
 
 /* скрываем чекбокс */
+
 #menu__toggle {
     opacity: 0;
-  }/* стилизуем кнопку */
-  .menu__btn {
-    display: flex; /* используем flex для центрирования содержимого */
-    align-items: center;  /* центрируем содержимое кнопки */
+}
+
+
+/* стилизуем кнопку */
+
+.menu__btn {
+    display: flex;
+    /* используем flex для центрирования содержимого */
+    align-items: center;
+    /* центрируем содержимое кнопки */
     position: fixed;
     top: 20px;
-    left: 10px;  width: 26px;
-    height: 26px;  cursor: pointer;
+    left: 10px;
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
     z-index: 2;
-  }/* добавляем "гамбургер" */
-  .menu__btn > span,
-  .menu__btn > span::before,
-  .menu__btn > span::after {
+}
+
+
+/* добавляем "гамбургер" */
+
+.menu__btn>span,
+.menu__btn>span::before,
+.menu__btn>span::after {
     display: block;
-    position: absolute;  width: 100%;
-    height: 2px;  background-color: #616161;
-  }
-  .menu__btn > span::before {
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #616161;
+}
+
+.menu__btn>span::before {
     content: '';
     top: -8px;
-  }
-  .menu__btn > span::after {
+}
+
+.menu__btn>span::after {
     content: '';
     top: 8px;
-  }
+}
 
-  /* контейнер меню */
+
+/* контейнер меню */
+
 .menu__box {
     display: block;
     position: fixed;
     visibility: hidden;
     top: 0;
-    left: -100%;  width: 300px;
-    height: 100%;  margin: 0;
-    padding: 80px 0;  list-style: none;
-    text-align: center;  background-color: black;
+    left: -100%;
+    width: 300px;
+    height: 100%;
+    margin: 0;
+    padding: 80px 0;
+    list-style: none;
+    text-align: center;
+    background-color: black;
     box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
-  }/* элементы меню */
-  .menu__item {
-    display: block;
-    padding: 12px 24px;  color: whitesmoke;  font-family: 'Roboto', sans-serif;
-    font-size: 20px;
-    font-weight: 600;  text-decoration: none;
-    box-sizing: border-box;
-  }
-  .menu__item:hover {
-background: gray;
-  }
+}
 
-  #menu__toggle:checked ~ .menu__btn > span {
+
+/* элементы меню */
+
+.menu__item {
+    display: block;
+    padding: 12px 24px;
+    color: whitesmoke;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+.menu__item:hover {
+    background: gray;
+}
+
+#menu__toggle:checked~.menu__btn>span {
     transform: rotate(45deg);
-  }
-  #menu__toggle:checked ~ .menu__btn > span::before {
+}
+
+#menu__toggle:checked~.menu__btn>span::before {
     top: 0;
     transform: rotate(0);
-  }
-  #menu__toggle:checked ~ .menu__btn > span::after {
+}
+
+#menu__toggle:checked~.menu__btn>span::after {
     top: 0;
     transform: rotate(90deg);
-  }
-  #menu__toggle:checked ~ .menu__box {
+}
+
+#menu__toggle:checked~.menu__box {
     visibility: visible;
     left: 0;
-  }
+}
+
+
+/*--------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+* {
+    box-sizing: border-box;
+}
+
+.transparent {
+    position: relative;
+    max-width: 400px;
+    padding: 60px 50px;
+    margin: 50px auto 0;
+    background-image: url("back.jpg");
+    background-size: cover;
+}
+
+.transparent:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to right bottom, rgba(43, 44, 78, .5), rgba(104, 22, 96, .5));
+}
+
+.form-inner {
+    position: relative;
+}
+
+.form-inner h3 {
+    position: relative;
+    margin-top: 0;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 26px;
+    text-transform: uppercase;
+}
+
+.form-inner h3:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    height: 2px;
+    width: 60px;
+    background: #1762EE;
+}
+
+.form-inner label {
+    display: block;
+    padding-left: 15px;
+    font-family: 'Roboto', sans-serif;
+    color: rgba(255, 255, 255, .6);
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.form-inner input {
+    display: block;
+    width: 100%;
+    padding: 0 15px;
+    margin: 10px 0 15px;
+    border-width: 0;
+    line-height: 40px;
+    border-radius: 20px;
+    color: white;
+    background: rgba(255, 255, 255, .2);
+    font-family: 'Roboto', sans-serif;
+}
+
+.form-inner input[type="checkbox"] {
+    position: absolute;
+    opacity: 0;
+}
+
+#custom-checkbox+label {
+    position: relative;
+    margin: 20px 0;
+    text-transform: none;
+    cursor: pointer;
+}
+
+#custom-checkbox+label:before {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    vertical-align: text-top;
+    background: white;
+}
+
+#custom-checkbox:checked+label:before {
+    background: #1762EE;
+}
+
+#custom-checkbox:checked+label:after {
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    left: 20px;
+    top: 9px;
+    background: white;
+    box-shadow: 2px 0 0 white, 4px 0 0 white, 4px -2px 0 white, 4px -4px 0 white, 4px -6px 0 white, 4px -8px 0 white;
+    transform: rotate(45deg);
+}
+
+.form-inner input[type="submit"] {
+    background: #1762EE;
+    margin-top: 20%;
+}
+
+#van1 {
+    position: fixed;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    background: rgba(0, 0, 0, 0.75);
+    z-index: 10;
+    display: none;
+}
+
+.krest {
+    top: -12%;
+    position: absolute;
+    left: 97%;
+    width: 50px;
+    height: 50px;
+}
+
+#to2 {
+    position: fixed;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    background: rgba(0, 0, 0, 0.75);
+    z-index: 10;
+    display: none;
+}
+
+#donate {
+    position: fixed;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    background: rgba(0, 0, 0, 0.75);
+    z-index: 10;
+    display: none;
+}
+
+.wowoww {
+    width: 100%;
+}
